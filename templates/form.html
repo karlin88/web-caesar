@@ -1,0 +1,35 @@
+<!DOTYPE html>
+    <html>
+        <head>
+            <style>
+                form {
+                    background-color: #eee;
+                    padding: 20px;
+                    margin 0 auto;
+                    width: 540px;
+                    font: 16px 'Arial', sans-serif;
+                    border-radius: 10px;
+                }
+                textarea {
+                    marin: 10px 0;
+                    width: 540px;
+                    height: 120px;
+                }
+                body {
+                    margin-left: 30%;
+                    margin-right: 30%;
+                }
+            </style>
+        </head>
+    <body>
+        <!--create yoru form here-->
+        <div>
+        <form action="/" method="post">
+            Rotate by:
+            <input type="text" name="rot" value="0"/>
+            <textarea name="text">{{textarea_content}}</textarea>
+            <input type="submit" value="Submit Query" />
+        </form>
+        </div>
+    </body>
+</html>
