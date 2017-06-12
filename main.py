@@ -8,7 +8,7 @@ app.config['DEBUG'] = True
 
 @app.route("/")
 def index():
-    content = render_template('form.html', textarea_content = "", style_sheet = url_for('static', filename='style.css'))
+    content = render_template('form.html', textarea_content = "")
 
     return content
 
@@ -19,7 +19,7 @@ def encrypt():
     textstr = request.form['text']
     encrypted = rotate_string(textstr, int(rotation))
     
-    return render_template('form.html', textarea_content = encrypted, style_sheet = url_for('static', filename='style.css'))
+    return render_template('form.html', textarea_content = encrypted)
     #return "<h1>" + encrypted + "</h1>"
 
 
